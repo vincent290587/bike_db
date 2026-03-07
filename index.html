@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Event Dashboard</h1>
+
+    <div class="flex flex-wrap gap-4 mb-8 bg-white p-4 rounded-lg shadow-sm">
+        <input type="text" id="search" placeholder="Search by name..." class="border p-2 rounded w-64">
+        <select id="sportFilter" class="border p-2 rounded">
+            <option value="">All Sports</option>
+            <option value="Ride">Ride</option>
+            <option value="Run">Run</option>
+        </select>
+    </div>
+
+    <div id="results" class="grid gap-4 md:grid-cols-2">
+    </div>
+</div>
+
+<script>
+    let events = [];
+
+    // 1. Fetch the data
+    async function loadEvents() {
+        try {
+            // Change 'data.json' to your actual filename
+            const response = await fetch('events.json');
+            events = await response.json();
+            renderEvents(events);
+        } catch (err) {
+            console.error("Error loading JSON:", err);
+        }
+    }
+
+    // 2. Render the items
+    function renderEvents(data) {
+        const container = document.getElementById('results');
+        container.innerHTML = data.map(item => `
+            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-500">
+                <div class="text-xs font-bold text-blue-600 uppercase">${item.sport} • ${item.distanceMin}km</div>
+                <h2 class="text-xl font-bold mt-1">${item.name}</h2>
+                <p class="text-gray-600 text-sm mt-2">📍 ${item.sLocation} (${item.country})</p>
+                <p class="text-gray-500 text-sm italic">${item.sDate}</p>
+            </div>
+        `).join('');
+    }
+
+    // 3. Simple Filtering Logic
+    function filterData() {
+        const searchTerm = document.getElementById('search').value.toLowerCase();
+        const sportValue = document.getElementById('sportFilter').value;
+
+        const filtered = events.filter(item => {
+            const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+            const matchesSport = sportValue === "" || item.sport === sportValue;
+            return matchesSearch && matchesSport;
+        });
+
+        renderEvents(filtered);
+    }
+
+    document.getElementById('search').addEventListener('input', filterData);
+    document.getElementById('sportFilter').addEventListener('change', filterData);
+
+    loadEvents();
+</script>
+</body>
+</html>
