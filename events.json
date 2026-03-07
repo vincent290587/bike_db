@@ -1,0 +1,1426 @@
+[
+  {
+    "name": "Ermelose MTB en Graveltocht",
+    "country": "NL",
+    "sDate": "Mar 7, 2026",
+    "sLocation": "Netherlands Ermelo",
+    "sport": "Ride",
+    "distanceMin": 89
+  },
+  {
+    "name": "Apeldoornse Mountainbike Marathon",
+    "country": "NL",
+    "sDate": "Mar 7, 2026",
+    "sLocation": "Netherlands Apeldoorn",
+    "sport": "Ride",
+    "distanceMin": 94
+  },
+  {
+    "name": "Eendrachttocht Cyclo & Gravel",
+    "country": "BE",
+    "sDate": "Mar 7, 2026",
+    "sLocation": "Belgium Gontrode",
+    "sport": "Ride",
+    "distanceMin": 119
+  },
+  {
+    "name": "Snerttocht",
+    "country": "NL",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Netherlands Nieuwkoop",
+    "sport": "Ride",
+    "distanceMin": 43
+  },
+  {
+    "name": "Ontwakingstocht",
+    "country": "NL",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Netherlands Driebergen-Rijsenburg",
+    "sport": "Ride",
+    "distanceMin": 55
+  },
+  {
+    "name": "Veldtoertocht De Pedaleur",
+    "country": "NL",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Netherlands Oirschot",
+    "sport": "Ride",
+    "distanceMin": 77
+  },
+  {
+    "name": "Strade Bianche Noord-Holland",
+    "country": "NL",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Netherlands Hoorn",
+    "sport": "Ride",
+    "distanceMin": 88
+  },
+  {
+    "name": "Crossduatlon Retie",
+    "country": "BE",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Belgium Retie",
+    "sport": "Ride",
+    "distanceMin": 92
+  },
+  {
+    "name": "3-Valleien Mountain Bike Tocht",
+    "country": "BE",
+    "sDate": "Mar 8, 2026",
+    "sLocation": "Belgium Bertem",
+    "sport": "Ride",
+    "distanceMin": 112
+  },
+  {
+    "name": "Gravel nacht voor de zorg",
+    "country": "BE",
+    "sDate": "Mar 13, 2026",
+    "sLocation": "Belgium Attenhoven",
+    "sport": "Ride",
+    "distanceMin": 75
+  },
+  {
+    "name": "Schoorlse Brute Bikechallenge",
+    "country": "NL",
+    "sDate": "Mar 13, 2026",
+    "sLocation": "Netherlands Schoorl",
+    "sport": "Ride",
+    "distanceMin": 93
+  },
+  {
+    "name": "Duinentocht Zoetermeer",
+    "country": "NL",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Netherlands Zoetermeer",
+    "sport": "Ride",
+    "distanceMin": 24
+  },
+  {
+    "name": "Voorjaarstocht RTC Express",
+    "country": "NL",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Netherlands Amsterdam",
+    "sport": "Ride",
+    "distanceMin": 69
+  },
+  {
+    "name": "Foxtown Gravelride",
+    "country": "BE",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Belgium Vosselaar",
+    "sport": "Ride",
+    "distanceMin": 82
+  },
+  {
+    "name": "Augustijnfietstocht",
+    "country": "BE",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Belgium Ertvelde",
+    "sport": "Ride",
+    "distanceMin": 102
+  },
+  {
+    "name": "Zeeuws-Vlaamse Toertochten",
+    "country": "BE",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Belgium Oostakker",
+    "sport": "Ride",
+    "distanceMin": 109
+  },
+  {
+    "name": "Gravel Africa Social Ride",
+    "country": "NL",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "Netherlands Zwolle",
+    "sport": "Ride",
+    "distanceMin": 115
+  },
+  {
+    "name": "saint romain de popey",
+    "country": "FR",
+    "sDate": "Mar 14, 2026",
+    "sLocation": "69490 Saint-Romain-de-Popey, France",
+    "sport": "Ride",
+    "distanceMin": 282
+  },
+  {
+    "name": "Bosduvels MTB / gravel Ride",
+    "country": "NL",
+    "sDate": "Mar 15, 2026",
+    "sLocation": "Netherlands Lieshout",
+    "sport": "Ride",
+    "distanceMin": 97
+  },
+  {
+    "name": "Wase Ardennenrit",
+    "country": "BE",
+    "sDate": "Mar 15, 2026",
+    "sLocation": "Belgium Sombeke",
+    "sport": "Ride",
+    "distanceMin": 97
+  },
+  {
+    "name": "Fietstocht Werner",
+    "country": "BE",
+    "sDate": "Mar 15, 2026",
+    "sLocation": "Belgium Zelzate",
+    "sport": "Ride",
+    "distanceMin": 99
+  },
+  {
+    "name": "PlugPlug Scheldeland",
+    "country": "BE",
+    "sDate": "Mar 15, 2026",
+    "sLocation": "Belgium Berlare",
+    "sport": "Ride",
+    "distanceMin": 115
+  },
+  {
+    "name": "2-Provinciëntocht (Waardentocht)",
+    "country": "NL",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Netherlands Krimpen aan den IJssel",
+    "sport": "Ride",
+    "distanceMin": 19
+  },
+  {
+    "name": "Joop Zoetemelk Classic",
+    "country": "NL",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Netherlands Leiden",
+    "sport": "Ride",
+    "distanceMin": 34
+  },
+  {
+    "name": "Hello Spring Road MTB Gravel",
+    "country": "NL",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Netherlands Nijkerk",
+    "sport": "Ride",
+    "distanceMin": 74
+  },
+  {
+    "name": "Veluviatocht",
+    "country": "NL",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Netherlands Wageningen",
+    "sport": "Ride",
+    "distanceMin": 82
+  },
+  {
+    "name": "Giro di Barbiro toertochten",
+    "country": "NL",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Netherlands Elburg",
+    "sport": "Ride",
+    "distanceMin": 105
+  },
+  {
+    "name": "BCF - PRIMAVERA",
+    "country": "BE",
+    "sDate": "Mar 21, 2026",
+    "sLocation": "Belgium",
+    "sport": "Ride",
+    "distanceMin": 130
+  },
+  {
+    "name": "Gran Rondo Amsterdam",
+    "country": "NL",
+    "sDate": "Mar 22, 2026",
+    "sLocation": "Netherlands Amsterdam",
+    "sport": "Ride",
+    "distanceMin": 69
+  },
+  {
+    "name": "Turnhout Gravel",
+    "country": "BE",
+    "sDate": "Mar 22, 2026",
+    "sLocation": "Belgium Turnhout",
+    "sport": "Ride",
+    "distanceMin": 78
+  },
+  {
+    "name": "UCI Turnhout Gravel",
+    "country": "BE",
+    "sDate": "Mar 22, 2026",
+    "sLocation": "2300 Turnhout, België",
+    "sport": "Gravel Ride",
+    "distanceMin": 82
+  },
+  {
+    "name": "Winterduatlon Hofstade",
+    "country": "BE",
+    "sDate": "Mar 22, 2026",
+    "sLocation": "Belgium Hofstade",
+    "sport": "Ride",
+    "distanceMin": 98
+  },
+  {
+    "name": "Dwars door Merchtem",
+    "country": "BE",
+    "sDate": "Mar 22, 2026",
+    "sLocation": "Belgium Merchtem",
+    "sport": "Ride",
+    "distanceMin": 107
+  },
+  {
+    "name": "Bergtoer van Ochten",
+    "country": "NL",
+    "sDate": "Mar 28, 2026",
+    "sLocation": "Netherlands Dodewaard",
+    "sport": "Ride",
+    "distanceMin": 73
+  },
+  {
+    "name": "Let's Gravel",
+    "country": "NL",
+    "sDate": "Mar 28, 2026",
+    "sLocation": "Netherlands Rhenen",
+    "sport": "Ride",
+    "distanceMin": 74
+  },
+  {
+    "name": "Parel van het Pajottenland",
+    "country": "BE",
+    "sDate": "Mar 28, 2026",
+    "sLocation": "Belgium Liedekerke",
+    "sport": "Ride",
+    "distanceMin": 119
+  },
+  {
+    "name": "Gent Wevelgem cyclo",
+    "country": "BE",
+    "sDate": "Mar 28, 2026",
+    "sLocation": "8560 Wevelgem, Belgium",
+    "sport": "Ride",
+    "distanceMin": 153
+  },
+  {
+    "name": "Omloop van Zandvoort",
+    "country": "NL",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Netherlands Zandvoort",
+    "sport": "Ride",
+    "distanceMin": 68
+  },
+  {
+    "name": "Stelling van Amsterdam Toertocht",
+    "country": "NL",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Netherlands Weesp",
+    "sport": "Ride",
+    "distanceMin": 71
+  },
+  {
+    "name": "TWC Dommeldal Challenge",
+    "country": "NL",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Netherlands Sint-Oedenrode",
+    "sport": "Ride",
+    "distanceMin": 86
+  },
+  {
+    "name": "sweat it out offroad",
+    "country": "BE",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Belgium Nieuwkerken-Waas",
+    "sport": "Ride",
+    "distanceMin": 86
+  },
+  {
+    "name": "The Bulls Cycling Road Tours",
+    "country": "BE",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Belgium Nieuwkerken-Waas",
+    "sport": "Ride",
+    "distanceMin": 86
+  },
+  {
+    "name": "Watertorenroute",
+    "country": "NL",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Netherlands Hoorn",
+    "sport": "Ride",
+    "distanceMin": 88
+  },
+  {
+    "name": "Primavera Ride",
+    "country": "NL",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Netherlands Apeldoorn",
+    "sport": "Ride",
+    "distanceMin": 94
+  },
+  {
+    "name": "Koereuzzje classic",
+    "country": "BE",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Belgium Mechelen",
+    "sport": "Ride",
+    "distanceMin": 95
+  },
+  {
+    "name": "Trappen in het wiel van Axel Merckx tvv Kom Op Tegen Kanker",
+    "country": "BE",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "Belgium Everberg",
+    "sport": "Ride",
+    "distanceMin": 113
+  },
+  {
+    "name": "UCI Granfondo Belgium - Les Lac de l'Eau d'Heure",
+    "country": "BE",
+    "sDate": "Mar 29, 2026",
+    "sLocation": "5630 Cerfontaine, België",
+    "sport": "Ride",
+    "distanceMin": 184
+  },
+  {
+    "name": "CORIMA",
+    "country": "FR",
+    "sDate": "Mar 30, 2026",
+    "sLocation": "298 Bd Gabriel Péri, 93130 Noisy-le-Sec, France",
+    "sport": "Ride",
+    "distanceMin": 258
+  },
+  {
+    "name": "Borderline700",
+    "country": "NL",
+    "sDate": "Apr 3, 2026",
+    "sLocation": "Netherlands Gouda",
+    "sport": "Ride",
+    "distanceMin": 24
+  },
+  {
+    "name": "Lek en Lingetocht",
+    "country": "NL",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "Netherlands Cothen",
+    "sport": "Ride",
+    "distanceMin": 59
+  },
+  {
+    "name": "Toerklassieker Veenendaal-Veenendaal",
+    "country": "NL",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "Netherlands Veenendaal",
+    "sport": "Ride",
+    "distanceMin": 70
+  },
+  {
+    "name": "Hageland - In 't Ven Classic",
+    "country": "BE",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "Belgium Oud-Turnhout",
+    "sport": "Ride",
+    "distanceMin": 81
+  },
+  {
+    "name": "Cycling Tour Mervielde",
+    "country": "BE",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "Belgium Ertvelde",
+    "sport": "Ride",
+    "distanceMin": 102
+  },
+  {
+    "name": "Veluwe Heuvelentocht",
+    "country": "NL",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "Netherlands Twello",
+    "sport": "Ride",
+    "distanceMin": 107
+  },
+  {
+    "name": "We ride Flanders",
+    "country": "BE",
+    "sDate": "Apr 4, 2026",
+    "sLocation": "9700 Oudenaarde, Belgium",
+    "sport": "Ride",
+    "distanceMin": 136
+  },
+  {
+    "name": "Flandrien Ride",
+    "country": "NL",
+    "sDate": "Apr 5, 2026",
+    "sLocation": "Netherlands Eindhoven",
+    "sport": "Ride",
+    "distanceMin": 96
+  },
+  {
+    "name": "Bultentocht",
+    "country": "NL",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "Netherlands Driebergen-Rijsenburg",
+    "sport": "Ride",
+    "distanceMin": 55
+  },
+  {
+    "name": "Rondje Markermeer",
+    "country": "NL",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "Netherlands Weesp",
+    "sport": "Ride",
+    "distanceMin": 71
+  },
+  {
+    "name": "Rondje Paashaas",
+    "country": "NL",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "Netherlands Hoorn",
+    "sport": "Ride",
+    "distanceMin": 88
+  },
+  {
+    "name": "Dirty Kempen Gravel Ride",
+    "country": "NL",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "Netherlands Eersel",
+    "sport": "Ride",
+    "distanceMin": 97
+  },
+  {
+    "name": "Klimtoertocht Rondom de Totenhügel",
+    "country": "NL",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "Netherlands Siebengewald",
+    "sport": "Ride",
+    "distanceMin": 117
+  },
+  {
+    "name": "VILLETTE SUR AIN Souvenir Jean CLAPISSON Open 2/3 Hommes",
+    "country": "FR",
+    "sDate": "Apr 6, 2026",
+    "sLocation": "01320 Villette-sur-Ain, France",
+    "sport": "Ride",
+    "distanceMin": 252
+  },
+  {
+    "name": "Kleppers Graveltocht Dongen",
+    "country": "NL",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Netherlands Dongen",
+    "sport": "Ride",
+    "distanceMin": 57
+  },
+  {
+    "name": "Groenendaaltocht",
+    "country": "NL",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Netherlands Amsterdam",
+    "sport": "Ride",
+    "distanceMin": 69
+  },
+  {
+    "name": "Tour de Haute Veluwe",
+    "country": "NL",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Netherlands Bennekom",
+    "sport": "Ride",
+    "distanceMin": 77
+  },
+  {
+    "name": "Omloop van de Braakman",
+    "country": "NL",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Netherlands Philippine",
+    "sport": "Ride",
+    "distanceMin": 107
+  },
+  {
+    "name": "Tulpen Classic",
+    "country": "NL",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Netherlands Urk",
+    "sport": "Ride",
+    "distanceMin": 109
+  },
+  {
+    "name": "Dusty Gravel Andenne",
+    "country": "BE",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Pl. des Tilleuls, 5300 Andenne, Belgium",
+    "sport": "Gravel Ride",
+    "distanceMin": 155
+  },
+  {
+    "name": "Bruyères Challenge bicyclic",
+    "country": "BE",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Bruyères, 4651 Herve, Belgique",
+    "sport": "Ride",
+    "distanceMin": 162
+  },
+  {
+    "name": "Paris Roubaix Challenge 170km",
+    "country": "FR",
+    "sDate": "Apr 11, 2026",
+    "sLocation": "Busigny, France",
+    "sport": "Ride",
+    "distanceMin": 267
+  },
+  {
+    "name": "Rotary Bike Challenge",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Nieuwveen",
+    "sport": "Ride",
+    "distanceMin": 46
+  },
+  {
+    "name": "Ride for Prinses Maxima Centrum",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Oss",
+    "sport": "Ride",
+    "distanceMin": 83
+  },
+  {
+    "name": "Arnhem's Mooiste",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Oosterbeek",
+    "sport": "Ride",
+    "distanceMin": 87
+  },
+  {
+    "name": "Gran Rondo Noord-Holland",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Schoorl",
+    "sport": "Ride",
+    "distanceMin": 93
+  },
+  {
+    "name": "040 Ride",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Eindhoven",
+    "sport": "Ride",
+    "distanceMin": 96
+  },
+  {
+    "name": "Kwaremont Toertocht",
+    "country": "NL",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Netherlands Meijel",
+    "sport": "Ride",
+    "distanceMin": 118
+  },
+  {
+    "name": "Prix de Neuville sur Ain",
+    "country": "FR",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Neuville-sur-Ain, France",
+    "sport": "Ride",
+    "distanceMin": 247
+  },
+  {
+    "name": "MTB Event Veringendorf",
+    "country": "DE",
+    "sDate": "Apr 12, 2026",
+    "sLocation": "Dorfplatz in Veringendorf",
+    "sport": "MTB",
+    "distanceMin": 272
+  },
+  {
+    "name": "Flierefluiterstocht",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Netherlands Capelle aan den IJssel",
+    "sport": "Ride",
+    "distanceMin": 16
+  },
+  {
+    "name": "Betuwse Bloesemtoertocht",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Netherlands Geldermalsen",
+    "sport": "Ride",
+    "distanceMin": 56
+  },
+  {
+    "name": "Mutsaars Hel van Schijndel",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Netherlands Schijndel",
+    "sport": "Ride",
+    "distanceMin": 80
+  },
+  {
+    "name": "Ronde van Noord-Holland",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Netherlands Hoorn",
+    "sport": "Ride",
+    "distanceMin": 88
+  },
+  {
+    "name": "Zeeuwse tocht",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Netherlands Sluiskil",
+    "sport": "Ride",
+    "distanceMin": 106
+  },
+  {
+    "name": "BCF - CLASSIQUE ARDENNE",
+    "country": "BE",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Belgium",
+    "sport": "Ride",
+    "distanceMin": 130
+  },
+  {
+    "name": "Toerversie Amstel Gold Race",
+    "country": "NL",
+    "sDate": "Apr 18, 2026",
+    "sLocation": "Valkenburg aan de Geul, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 160
+  },
+  {
+    "name": "Omloop Rotterdam",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Spijkenisse",
+    "sport": "Ride",
+    "distanceMin": 26
+  },
+  {
+    "name": "Bollenstreek Classic",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Lisse",
+    "sport": "Ride",
+    "distanceMin": 45
+  },
+  {
+    "name": "Klaver van Brabant toertochten",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Zijtaart",
+    "sport": "Ride",
+    "distanceMin": 84
+  },
+  {
+    "name": "Noord-Hollandse Bollentocht",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Hoorn",
+    "sport": "Ride",
+    "distanceMin": 88
+  },
+  {
+    "name": "Strade Brabantia",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Veldhoven",
+    "sport": "Ride",
+    "distanceMin": 92
+  },
+  {
+    "name": "Reichswald Gravelride",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Zevenaar",
+    "sport": "Ride",
+    "distanceMin": 102
+  },
+  {
+    "name": "TC de Liemers Reichswald Classic",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Zevenaar",
+    "sport": "Ride",
+    "distanceMin": 102
+  },
+  {
+    "name": "TC de Liemers Gravelride",
+    "country": "NL",
+    "sDate": "Apr 19, 2026",
+    "sLocation": "Netherlands Zevenaar",
+    "sport": "Ride",
+    "distanceMin": 102
+  },
+  {
+    "name": "MOVE",
+    "country": "BE",
+    "sDate": "Apr 20, 2026",
+    "sLocation": "Kortrijk, Belgium",
+    "sport": "Ride",
+    "distanceMin": 142
+  },
+  {
+    "name": "Bloembollen Toertocht",
+    "country": "NL",
+    "sDate": "Apr 24, 2026",
+    "sLocation": "Netherlands Weesp",
+    "sport": "Ride",
+    "distanceMin": 71
+  },
+  {
+    "name": "Race Across Paris",
+    "country": "FR",
+    "sDate": "Apr 24, 2026",
+    "sLocation": "60500 Chantilly, France",
+    "sport": "Ride",
+    "distanceMin": 285
+  },
+  {
+    "name": "Duin- en Bollentocht",
+    "country": "NL",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Netherlands Alphen aan den Rijn",
+    "sport": "Ride",
+    "distanceMin": 33
+  },
+  {
+    "name": "Kees Bal Classic",
+    "country": "NL",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Netherlands 's-Heer Hendrikskinderen",
+    "sport": "Ride",
+    "distanceMin": 76
+  },
+  {
+    "name": "Grenspalenklassieker Brabantse Kempen",
+    "country": "NL",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Netherlands Reusel",
+    "sport": "Ride",
+    "distanceMin": 76
+  },
+  {
+    "name": "LBL",
+    "country": "BE",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Rue de l’Esplanade",
+    "sport": "Ride",
+    "distanceMin": 117
+  },
+  {
+    "name": "Liège Bastogne Liège Challenge",
+    "country": "BE",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "4000 Liège, Belgium",
+    "sport": "Ride",
+    "distanceMin": 155
+  },
+  {
+    "name": "Gravel One Fifty",
+    "country": "NL",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Roden, Nederland",
+    "sport": "Gravel Ride",
+    "distanceMin": 182
+  },
+  {
+    "name": "Schönbuch Trophy",
+    "country": "DE",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Stuttgarter Straße 53",
+    "sport": "MTB",
+    "distanceMin": 217
+  },
+  {
+    "name": "Schönbuch Trophy",
+    "country": "DE",
+    "sDate": "Apr 25, 2026",
+    "sLocation": "Stuttgarter Straße 53",
+    "sport": "MTB",
+    "distanceMin": 217
+  },
+  {
+    "name": "BK ploegen triatlon",
+    "country": "BE",
+    "sDate": "Apr 26, 2026",
+    "sLocation": "Doornik, België",
+    "sport": "Ride",
+    "distanceMin": 166
+  },
+  {
+    "name": "tour 300",
+    "country": "BE",
+    "sDate": "May 1, 2026",
+    "sLocation": "Waregem, Belgium",
+    "sport": "Ride",
+    "distanceMin": 134
+  },
+  {
+    "name": "tour 300",
+    "country": "BE",
+    "sDate": "May 1, 2026",
+    "sLocation": "Waregem, Belgium",
+    "sport": "Ride",
+    "distanceMin": 134
+  },
+  {
+    "name": "Roc d'Ardenne",
+    "country": "BE",
+    "sDate": "May 1, 2026",
+    "sLocation": "Houffalize, Belgien",
+    "sport": "MTB",
+    "distanceMin": 200
+  },
+  {
+    "name": "ADAC Velotour Taunus Classic",
+    "country": "DE",
+    "sDate": "May 1, 2026",
+    "sLocation": "Praunheimer Straße 9, 65760 Eschborn, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 222
+  },
+  {
+    "name": "ADAC Velotour",
+    "country": "DE",
+    "sDate": "May 1, 2026",
+    "sLocation": "65760 Eschborn, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 223
+  },
+  {
+    "name": "Lindner Berg",
+    "country": "DE",
+    "sDate": "May 1, 2026",
+    "sLocation": "30 Hannover, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 288
+  },
+  {
+    "name": "Veluwe Krachttoer 2026",
+    "country": "NL",
+    "sDate": "May 2, 2026",
+    "sLocation": "Voorthuizen, Nederland",
+    "sport": "Ride",
+    "distanceMin": 78
+  },
+  {
+    "name": "AUDAX Suisse BRM 300 - Sanfte Wogen & Weite",
+    "country": "DE",
+    "sDate": "May 2, 2026",
+    "sLocation": "Salesianerweg 7",
+    "sport": "Ride",
+    "distanceMin": 272
+  },
+  {
+    "name": "GO Triathlon Brouwersdam 90",
+    "country": "NL",
+    "sDate": "May 9, 2026",
+    "sLocation": "Brouwersdam, 3253 ME Ouddorp, Nederland",
+    "sport": "Ride",
+    "distanceMin": 48
+  },
+  {
+    "name": "De Gelderse 11-Dorpentocht",
+    "country": "NL",
+    "sDate": "May 9, 2026",
+    "sLocation": "Schaarsdijkweg 9, Nederland",
+    "sport": "Ride",
+    "distanceMin": 60
+  },
+  {
+    "name": "dh du schlumpf",
+    "country": "FR",
+    "sDate": "May 9, 2026",
+    "sLocation": "68290 Dolleren, France",
+    "sport": "MTB",
+    "distanceMin": 135
+  },
+  {
+    "name": "3 Std Rennen",
+    "country": "DE",
+    "sDate": "May 9, 2026",
+    "sLocation": "69429 Waldbrunn-Waldkatzenbach, Germany",
+    "sport": "MTB",
+    "distanceMin": 237
+  },
+  {
+    "name": "Par monts et jardins",
+    "country": "FR",
+    "sDate": "May 10, 2026",
+    "sLocation": "Laxou, France",
+    "sport": "Ride",
+    "distanceMin": 2
+  },
+  {
+    "name": "Monts et jardins",
+    "country": "FR",
+    "sDate": "May 10, 2026",
+    "sLocation": "9 Rue de la Toulose, 54520 Laxou, France",
+    "sport": "MTB",
+    "distanceMin": 33
+  },
+  {
+    "name": "Monts et jardins",
+    "country": "FR",
+    "sDate": "May 10, 2026",
+    "sLocation": "9 Rue de la Toulose, 54520 Laxou, France",
+    "sport": "MTB",
+    "distanceMin": 33
+  },
+  {
+    "name": "Monts et jardins",
+    "country": "FR",
+    "sDate": "May 10, 2026",
+    "sLocation": "9 Rue de la Toulose, 54520 Laxou, France",
+    "sport": "MTB",
+    "distanceMin": 33
+  },
+  {
+    "name": "UCI Marly Grav Race",
+    "country": "NL",
+    "sDate": "May 10, 2026",
+    "sLocation": "Valkenburg, Netherlands",
+    "sport": "Gravel Ride",
+    "distanceMin": 157
+  },
+  {
+    "name": "La Sundgauvienne",
+    "country": "FR",
+    "sDate": "May 10, 2026",
+    "sLocation": "Hegenheim",
+    "sport": "Ride",
+    "distanceMin": 173
+  },
+  {
+    "name": "Les 3 Cols",
+    "country": "FR",
+    "sDate": "May 14, 2026",
+    "sLocation": "69890 La Tour-de-Salvagny, France",
+    "sport": "Ride",
+    "distanceMin": 255
+  },
+  {
+    "name": "2. Uhlmann Oberschwaben Cycling Grand Prix",
+    "country": "DE",
+    "sDate": "May 14, 2026",
+    "sLocation": "88400 Biberach an der Riß, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 300
+  },
+  {
+    "name": "the ASA Epic",
+    "country": "NL",
+    "sDate": "May 15, 2026",
+    "sLocation": "Sportpark Zielhorst 2, Amersfoort, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 69
+  },
+  {
+    "name": "Altmühltal Radmarathon",
+    "country": "DE",
+    "sDate": "May 16, 2026",
+    "sLocation": "Verwaltungsgemeinschaft Altmühltal, 91, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 288
+  },
+  {
+    "name": "east coast endurotour sainte marie aux mines",
+    "country": "FR",
+    "sDate": "May 17, 2026",
+    "sLocation": "68160 Sainte-Marie-aux-Mines, France",
+    "sport": "MTB",
+    "distanceMin": 102
+  },
+  {
+    "name": "UCI Granfondo Vosges",
+    "country": "FR",
+    "sDate": "May 17, 2026",
+    "sLocation": "92 Rte de Vologne, 88250 La Bresse, France",
+    "sport": "Ride",
+    "distanceMin": 114
+  },
+  {
+    "name": "Gran Fondo Vosges 2026",
+    "country": "FR",
+    "sDate": "May 17, 2026",
+    "sLocation": "Rte de Vologne, 88250 La Bresse, France",
+    "sport": "Ride",
+    "distanceMin": 114
+  },
+  {
+    "name": "Mittelgebirgs Classique",
+    "country": "DE",
+    "sDate": "May 17, 2026",
+    "sLocation": "67 Neustadt an der Weinstraße, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 183
+  },
+  {
+    "name": "Rund um Köln",
+    "country": "DE",
+    "sDate": "May 17, 2026",
+    "sLocation": "Köln, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 260
+  },
+  {
+    "name": "Rund um Köln 60km",
+    "country": "DE",
+    "sDate": "May 17, 2026",
+    "sLocation": "Köln, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 260
+  },
+  {
+    "name": "Hamster Classique",
+    "country": "FR",
+    "sDate": "May 23, 2026",
+    "sLocation": "Strasbourg, France",
+    "sport": "Ride",
+    "distanceMin": 128
+  },
+  {
+    "name": "Hardennes Gravel",
+    "country": "BE",
+    "sDate": "May 23, 2026",
+    "sLocation": "Eupen, België",
+    "sport": "Gravel Ride",
+    "distanceMin": 170
+  },
+  {
+    "name": "Rundstreckenrennen Achkarren",
+    "country": "DE",
+    "sDate": "May 24, 2026",
+    "sLocation": "79235 Vogtsburg im Kaiserstuhl-Achkarren, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 159
+  },
+  {
+    "name": "fietselfstedentocht",
+    "country": "NL",
+    "sDate": "May 25, 2026",
+    "sLocation": "Boalsert, Niederlande",
+    "sport": "Ride",
+    "distanceMin": 140
+  },
+  {
+    "name": "UCI Schleck Gran Fondo",
+    "country": "LU",
+    "sDate": "May 30, 2026",
+    "sLocation": "Mondorf-les-Bains, Luxembourg",
+    "sport": "Ride",
+    "distanceMin": 114
+  },
+  {
+    "name": "Limburgs Mooiste 2026",
+    "country": "NL",
+    "sDate": "May 30, 2026",
+    "sLocation": "Heerlen, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 155
+  },
+  {
+    "name": "24h Longchamp",
+    "country": "FR",
+    "sDate": "May 30, 2026",
+    "sLocation": "Paris, France",
+    "sport": "Ride",
+    "distanceMin": 270
+  },
+  {
+    "name": "CDF Elancourt",
+    "country": "FR",
+    "sDate": "May 30, 2026",
+    "sLocation": "78990 Élancourt, France",
+    "sport": "MTB",
+    "distanceMin": 287
+  },
+  {
+    "name": "east coast endurotour Saint-dié des Vosges",
+    "country": "FR",
+    "sDate": "May 31, 2026",
+    "sLocation": "88100 Saint-Dié-des-Vosges, France",
+    "sport": "MTB",
+    "distanceMin": 79
+  },
+  {
+    "name": "Kraichgau Ironman 70.3",
+    "country": "DE",
+    "sDate": "May 31, 2026",
+    "sLocation": "76669 Bad Schönborn, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 190
+  },
+  {
+    "name": "La Vache qui rit",
+    "country": "FR",
+    "sDate": "May 31, 2026",
+    "sLocation": "Lons-le-Saunier, France",
+    "sport": "Ride",
+    "distanceMin": 200
+  },
+  {
+    "name": "Teamtijdrit Recreanten - Jan van Arckel",
+    "country": "NL",
+    "sDate": "Jun 3, 2026",
+    "sLocation": "4225 Noordeloos, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 39
+  },
+  {
+    "name": "Ride around the Ruhr",
+    "country": "DE",
+    "sDate": "Jun 4, 2026",
+    "sLocation": "44 Bochum, Deutschland",
+    "sport": "Gravel Ride",
+    "distanceMin": 300
+  },
+  {
+    "name": "Les 3 Ballons",
+    "country": "FR",
+    "sDate": "Jun 6, 2026",
+    "sLocation": "70250 Ronchamp, France",
+    "sport": "Ride",
+    "distanceMin": 134
+  },
+  {
+    "name": "Château de Chantilly (Half Distance)",
+    "country": "FR",
+    "sDate": "Jun 6, 2026",
+    "sLocation": "Rue du Connétable, 60500 Chantilly, France",
+    "sport": "Ride",
+    "distanceMin": 290
+  },
+  {
+    "name": "DTS GRAND PRIX ZANDVOORT",
+    "country": "NL",
+    "sDate": "Jun 13, 2026",
+    "sLocation": "Zandvoort, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 68
+  },
+  {
+    "name": "east coast enduro tour la semoy",
+    "country": "FR",
+    "sDate": "Jun 13, 2026",
+    "sLocation": "Rue de la Semoy, 08800 Les Hautes-Rivières, France",
+    "sport": "MTB",
+    "distanceMin": 205
+  },
+  {
+    "name": "🇳🇱 NK Weg Masters",
+    "country": "NL",
+    "sDate": "Jun 14, 2026",
+    "sLocation": "Papendallaan 49, 6816 VD Arnhem, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 83
+  },
+  {
+    "name": "Champ'man",
+    "country": "FR",
+    "sDate": "Jun 14, 2026",
+    "sLocation": "Épernay",
+    "sport": "Ride",
+    "distanceMin": 182
+  },
+  {
+    "name": "Bartje 200",
+    "country": "NL",
+    "sDate": "Jun 20, 2026",
+    "sLocation": "Gagels 4 9466 PL",
+    "sport": "Gravel Ride",
+    "distanceMin": 185
+  },
+  {
+    "name": "Eislek Gravel",
+    "country": "LU",
+    "sDate": "Jun 21, 2026",
+    "sLocation": "Vianden, Luxemburg",
+    "sport": "Gravel Ride",
+    "distanceMin": 156
+  },
+  {
+    "name": "Sparda Münster City Marathon 2026",
+    "country": "DE",
+    "sDate": "Jun 21, 2026",
+    "sLocation": "48 Münster, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 280
+  },
+  {
+    "name": "Race Across France 1000",
+    "country": "FR",
+    "sDate": "Jun 24, 2026",
+    "sLocation": "Orléans, France",
+    "sport": "Ride",
+    "distanceMin": 287
+  },
+  {
+    "name": "Coast to Coast Challenge 2026",
+    "country": "NL",
+    "sDate": "Jun 27, 2026",
+    "sLocation": "Zoutkamp, Nederland",
+    "sport": "Ride",
+    "distanceMin": 194
+  },
+  {
+    "name": "L'Alsacienne",
+    "country": "FR",
+    "sDate": "Jun 28, 2026",
+    "sLocation": "Kruth, France",
+    "sport": "Ride",
+    "distanceMin": 120
+  },
+  {
+    "name": "Ironman Frankfurt am Main?",
+    "country": "DE",
+    "sDate": "Jun 28, 2026",
+    "sLocation": "Frankfurt am Main, Duitsland",
+    "sport": "Ride",
+    "distanceMin": 222
+  },
+  {
+    "name": "Albextrem",
+    "country": "DE",
+    "sDate": "Jun 29, 2026",
+    "sLocation": "73 Ottenbach, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 253
+  },
+  {
+    "name": "GFNY Grand Ballon",
+    "country": "FR",
+    "sDate": "Jul 12, 2026",
+    "sLocation": "68800 Thann, France",
+    "sport": "Ride",
+    "distanceMin": 155
+  },
+  {
+    "name": "TIHM",
+    "country": "BE",
+    "sDate": "Jul 12, 2026",
+    "sLocation": "5537 Anhée, Belgium",
+    "sport": "Ride",
+    "distanceMin": 172
+  },
+  {
+    "name": "Berg & Bike Cup",
+    "country": "DE",
+    "sDate": "Jul 12, 2026",
+    "sLocation": "74915 Waibstadt, Germany",
+    "sport": "MTB",
+    "distanceMin": 210
+  },
+  {
+    "name": "RTF Ansbach",
+    "country": "DE",
+    "sDate": "Jul 12, 2026",
+    "sLocation": "91522 Ansbach, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 281
+  },
+  {
+    "name": "BAUKE MOLLEMA TOCHT",
+    "country": "NL",
+    "sDate": "Jul 18, 2026",
+    "sLocation": "Groningen, Nederland",
+    "sport": "Ride",
+    "distanceMin": 190
+  },
+  {
+    "name": "RömerMan",
+    "country": "DE",
+    "sDate": "Jul 18, 2026",
+    "sLocation": "Ladenburg, Germany",
+    "sport": "Ride",
+    "distanceMin": 197
+  },
+  {
+    "name": "VIA Chapter III",
+    "country": "NL",
+    "sDate": "Jul 24, 2026",
+    "sLocation": "Amerongen, Netherlands",
+    "sport": "Ride",
+    "distanceMin": 70
+  },
+  {
+    "name": "8H de SPA",
+    "country": "BE",
+    "sDate": "Jul 25, 2026",
+    "sLocation": "Rte du Circuit 36, 4970 Stavelot, Belgique",
+    "sport": "Ride",
+    "distanceMin": 185
+  },
+  {
+    "name": "Rad am Ring - 24 Stunden",
+    "country": "DE",
+    "sDate": "Jul 25, 2026",
+    "sLocation": "Otto-Flimm-Straße, 53520 Nürburg, Germany",
+    "sport": "Ride",
+    "distanceMin": 199
+  },
+  {
+    "name": "Rad am Ring Jedermannrennen 150",
+    "country": "DE",
+    "sDate": "Jul 26, 2026",
+    "sLocation": "Otto-Flimm-Straße, 53520 Nürburg, Germany",
+    "sport": "Ride",
+    "distanceMin": 199
+  },
+  {
+    "name": "Frankfurt City Triathlon",
+    "country": "DE",
+    "sDate": "Aug 2, 2026",
+    "sLocation": "Frankfurt am Main, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 222
+  },
+  {
+    "name": "La Gileppe Trophy - promo",
+    "country": "BE",
+    "sDate": "Aug 9, 2026",
+    "sLocation": "Rte de la Gileppe, Jalhay, Belgium",
+    "sport": "Ride",
+    "distanceMin": 175
+  },
+  {
+    "name": "Schwarzwald Super",
+    "country": "DE",
+    "sDate": "Aug 9, 2026",
+    "sLocation": "79244 Münstertal/Schwarzwald, Deutschland",
+    "sport": "Ride",
+    "distanceMin": 182
+  },
+  {
+    "name": "70.3 Duisburg",
+    "country": "DE",
+    "sDate": "Aug 17, 2026",
+    "sLocation": "47 Duisbourg, Allemagne",
+    "sport": "Ride",
+    "distanceMin": 291
+  },
+  {
+    "name": "Transiberica 26",
+    "country": "BE",
+    "sDate": "Aug 22, 2026",
+    "sLocation": "9700 Oudenaarde, Belgium",
+    "sport": "Ride",
+    "distanceMin": 136
+  },
+  {
+    "name": "east coast endurotour de giromagny",
+    "country": "FR",
+    "sDate": "Aug 30, 2026",
+    "sLocation": "Planche des Belles Filles, 90200 Plancher-les-Mines, France",
+    "sport": "MTB",
+    "distanceMin": 145
+  },
+  {
+    "name": "2026 UEC Gravel European Championships",
+    "country": "BE",
+    "sDate": "Aug 30, 2026",
+    "sLocation": "Houffalize, Belgium",
+    "sport": "Gravel Ride",
+    "distanceMin": 200
+  },
+  {
+    "name": "2026 UEC Gravel European Championships",
+    "country": "BE",
+    "sDate": "Aug 30, 2026",
+    "sLocation": "Houffalize, Belgium",
+    "sport": "Gravel Ride",
+    "distanceMin": 200
+  }
+]
