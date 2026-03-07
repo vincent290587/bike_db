@@ -66,7 +66,7 @@
                                 <span class="text-slate-400 uppercase">Min TSS</span>
                                 <span class="text-amber-600" id="minValDisplay">0</span>
                             </div>
-                            <input type="range" id="minTss" min="0" max="250" value="0">
+                            <input type="range" id="minTss" min="0" max="250" value="30">
                         </div>
 
                         <div>
@@ -74,7 +74,7 @@
                                 <span class="text-slate-400 uppercase">Max TSS</span>
                                 <span class="text-amber-600" id="maxValDisplay">250</span>
                             </div>
-                            <input type="range" id="maxTss" min="0" max="250" value="250">
+                            <input type="range" id="maxTss" min="0" max="300" value="250">
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
     document.getElementById('maxTss').addEventListener('input', updateUI);
     document.getElementById('resetBtn').addEventListener('click', () => {
         selectedLabels.clear();
-        document.getElementById('minTss').value = 0;
+        document.getElementById('minTss').value = 30;
         document.getElementById('maxTss').value = 250;
         document.querySelectorAll('#labelContainer button').forEach(b => {
             b.classList.remove('bg-amber-500', 'text-white', 'border-amber-500', 'shadow-md', 'shadow-amber-100');
