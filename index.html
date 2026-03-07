@@ -3,72 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Finder</title>
+    <title>Event Calendar & Distance Filter</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom accent color for the slider */
+        input[type=range] { accent-color: #10b981; }
+    </style>
 </head>
-<body class="bg-gray-100 p-8">
+<body class="bg-slate-50 min-h-screen p-4 md:p-12 text-slate-800">
 
-<div class="max-w-4xl mx-auto">
-    <h1 class="text-3xl font-bold mb-6">Event Dashboard</h1>
+<div class="max-w-3xl mx-auto">
+    <header class="mb-10 text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Event Finder</h1>
+        <p class="text-slate-500 mt-2">Filter by date and minimum distance</p>
+    </header>
 
-    <div class="flex flex-wrap gap-4 mb-8 bg-white p-4 rounded-lg shadow-sm">
-        <input type="text" id="search" placeholder="Search by name..." class="border p-2 rounded w-64">
-        <select id="sportFilter" class="border p-2 rounded">
-            <option value="">All Sports</option>
-            <option value="Ride">Ride</option>
-            <option value="Run">Run</option>
-        </select>
+    <div class="sticky top-4 z-10 flex flex-wrap items-end gap-8 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white mb-10">
+
+        <div class="flex flex-col flex-1 min-w-[200px]">
+            <label for="dateFilter" class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Events On or After</label>
+            <input type="date" id="dateFilter"
+                   class="bg-slate-100 border-none p-3 rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none transition-all">
+        </div>
+
+        <div class="flex flex-col flex-1 min-w-[200px]">
+            <div class="flex justify-between mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Min Distance</label>
+                <span class="text-emerald-600 font-bold"><span id="distVal">0</span> km</span>
+            </div>
+            <input type="range" id="distFilter" min="0" max="300" value="0" class="w-full cursor-pointer">
+        </div>
+
+        <button id="resetBtn" class="text-sm font-semibold text-slate-400 hover:text-rose-500 transition-colors pb-3">
+            Reset
+        </button>
     </div>
 
-    <div id="results" class="grid gap-4 md:grid-cols-2">
+    <div id="results" class="grid gap-6">
+        <div class="text-center py-20 text-slate-400">Loading events...</div>
     </div>
 </div>
 
 <script>
     let events = [];
 
-    // 1. Fetch the data
+    // 1. Fetch the data from your JSON file
     async function loadEvents() {
         try {
-            // Change 'data.json' to your actual filename
+            // Ensure your file is named 'data.json' or update this string
             const response = await fetch('events.json');
             events = await response.json();
             renderEvents(events);
         } catch (err) {
-            console.error("Error loading JSON:", err);
+            document.getElementById('results').innerHTML = `
+                <div class="bg-red-50 text-red-500 p-4 rounded-lg border border-red-100">
+                    Error loading JSON. Make sure 'data.json' is in the same folder.
+                </div>`;
         }
     }
 
-    // 2. Render the items
+    // 2. Build the HTML for the event cards
     function renderEvents(data) {
         const container = document.getElementById('results');
+
+        if(data.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-20">
+                    <p class="text-slate-400 text-lg italic">No events found matching those criteria.</p>
+                </div>`;
+            return;
+        }
+
         container.innerHTML = data.map(item => `
-            <div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-500">
-                <div class="text-xs font-bold text-blue-600 uppercase">${item.sport} • ${item.distanceMin}km</div>
-                <h2 class="text-xl font-bold mt-1">${item.name}</h2>
-                <p class="text-gray-600 text-sm mt-2">📍 ${item.sLocation} (${item.country})</p>
-                <p class="text-gray-500 text-sm italic">${item.sDate}</p>
+            <div class="group bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase italic">${item.sport}</span>
+                        <span class="text-slate-400 text-sm font-medium">${item.sDate}</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors">${item.name}</h2>
+                    <p class="text-slate-500 text-sm mt-1 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        ${item.sLocation} (${item.country})
+                    </p>
+                </div>
+                <div class="text-right">
+                    <div class="text-3xl font-black text-slate-900">${item.distanceMin}<span class="text-sm font-normal text-slate-400 ml-1">km</span></div>
+                </div>
             </div>
         `).join('');
     }
 
-    // 3. Simple Filtering Logic
+    // 3. Filtering Logic
     function filterData() {
-        const searchTerm = document.getElementById('search').value.toLowerCase();
-        const sportValue = document.getElementById('sportFilter').value;
+        const minDistance = parseInt(document.getElementById('distFilter').value);
+        const dateLimit = document.getElementById('dateFilter').value;
+
+        // Update numerical label
+        document.getElementById('distVal').innerText = minDistance;
 
         const filtered = events.filter(item => {
-            const matchesSearch = item.name.toLowerCase().includes(searchTerm);
-            const matchesSport = sportValue === "" || item.sport === sportValue;
-            return matchesSearch && matchesSport;
+            // Distance Match (Less than or equal to)
+            const matchesDist = item.distanceMin <= minDistance;
+
+            // Date Match (After or on the selected date)
+            let matchesDate = true;
+            if (dateLimit) {
+                const eventDate = new Date(item.sDate);
+                const filterDate = new Date(dateLimit);
+                matchesDate = eventDate >= filterDate;
+            }
+
+            return matchesDist && matchesDate;
         });
 
         renderEvents(filtered);
     }
 
-    document.getElementById('search').addEventListener('input', filterData);
-    document.getElementById('sportFilter').addEventListener('change', filterData);
+    // Reset all filters
+    function resetFilters() {
+        document.getElementById('distFilter').value = 0;
+        document.getElementById('dateFilter').value = '';
+        filterData();
+    }
 
+    // Event Listeners
+    document.getElementById('distFilter').addEventListener('input', filterData);
+    document.getElementById('dateFilter').addEventListener('change', filterData);
+    document.getElementById('resetBtn').addEventListener('click', resetFilters);
+
+    // Initial Load
     loadEvents();
 </script>
 </body>
