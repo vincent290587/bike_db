@@ -6,7 +6,9 @@
     <title>Workout Library</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        input[type=range] { accent-color: #f59e0b; } /* Amber accent for workouts */
+        input[type=range] { accent-color: #f59e0b; }
+        /* Ensure SVGs don't overflow their container */
+        .workout-svg { max-height: 80px; width: 100%; object-fit: contain; }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen p-4 md:p-12 text-slate-800">
@@ -14,11 +16,10 @@
 <div class="max-w-3xl mx-auto">
     <header class="mb-10 text-center">
         <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Workout Library</h1>
-        <p class="text-slate-500 mt-2">Filter by intensity and training zone</p>
+        <p class="text-slate-500 mt-2">Visual training guides</p>
     </header>
 
     <div class="sticky top-4 z-10 flex flex-wrap items-end gap-8 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white mb-10">
-
         <div class="flex flex-col flex-1 min-w-[200px]">
             <label for="zoneFilter" class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Training Zone</label>
             <select id="zoneFilter" class="bg-slate-100 border-none p-3 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition-all cursor-pointer">
@@ -34,16 +35,14 @@
             <input type="range" id="tssFilter" min="0" max="200" value="0" class="w-full cursor-pointer">
         </div>
 
-        <button id="resetBtn" class="text-sm font-semibold text-slate-400 hover:text-rose-500 transition-colors pb-3">
-            Reset
-        </button>
+        <button id="resetBtn" class="text-sm font-semibold text-slate-400 hover:text-rose-500 transition-colors pb-3">Reset</button>
     </div>
 
     <div class="mb-4 text-sm text-slate-400 font-medium">
         Showing <span id="count" class="text-slate-900">0</span> workouts
     </div>
 
-    <div id="results" class="grid gap-4">
+    <div id="results" class="grid gap-6">
         <div class="text-center py-20 text-slate-400">Loading workouts...</div>
     </div>
 </div>
@@ -51,27 +50,34 @@
 <script>
     let workouts = [];
 
+    // Replicating your Dart logic for filenames
+    function getSvgPath(name) {
+        let nameSVG = name;
+        nameSVG = nameSVG.replace(/\//g, '-');
+        nameSVG = nameSVG.replace(/\\/g, '-');
+        nameSVG = nameSVG.replace(/ /g, '_');
+        nameSVG = nameSVG.replace(/\?/g, '');
+        nameSVG = nameSVG.replace(/\"/g, '');
+        nameSVG = nameSVG.replace(/:/g, '');
+        return `images/${nameSVG}.svg`;
+    }
+
     async function loadWorkouts() {
         try {
-            const response = await fetch('workouts.json'); // Ensure this matches your filename
+            const response = await fetch('workouts.json');
             const data = await response.json();
-
-            // Important: Accessing the "rawDB" array from your JSON structure
             workouts = data.rawDB;
-
             populateZones(workouts);
             renderWorkouts(workouts);
         } catch (err) {
-            document.getElementById('results').innerHTML = `<div class="text-red-500">Error loading workouts.json</div>`;
+            document.getElementById('results').innerHTML = `<div class="text-red-500">Error loading data.</div>`;
         }
     }
 
-    // Automatically find all unique labels in your JSON to fill the dropdown
     function populateZones(data) {
         const select = document.getElementById('zoneFilter');
         const allLabels = data.flatMap(w => w.labels);
         const uniqueLabels = [...new Set(allLabels)].sort();
-
         uniqueLabels.forEach(label => {
             const opt = document.createElement('option');
             opt.value = label;
@@ -85,39 +91,48 @@
         document.getElementById('count').innerText = data.length;
 
         if(data.length === 0) {
-            container.innerHTML = `<p class="text-slate-400 italic text-center py-10">No workouts match these filters.</p>`;
+            container.innerHTML = `<p class="text-slate-400 italic text-center py-10">No workouts found.</p>`;
             return;
         }
 
-        container.innerHTML = data.map(w => `
-            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 flex items-center justify-between group hover:border-amber-200 transition-all">
-                <div>
-                    <div class="flex gap-2 mb-1">
-                        ${w.labels.map(l => `<span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-slate-100 text-slate-500 rounded">${l}</span>`).join('')}
-                    </div>
-                    <h2 class="text-lg font-bold text-slate-800">${w.name}</h2>
-                    <p class="text-slate-400 text-xs mt-1 italic font-medium">By ${w.author}</p>
+        container.innerHTML = data.map(w => {
+            const svgUrl = getSvgPath(w.name);
+            return `
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden group hover:shadow-md transition-all">
+                <div class="bg-slate-100 p-4 border-b border-slate-50 flex justify-center items-center">
+                    <img src="${svgUrl}"
+                         alt="${w.name}"
+                         class="workout-svg"
+                         onerror="this.src='https://placehold.co/400x100?text=No+Preview'">
                 </div>
-                <div class="text-right">
-                    <div class="text-2xl font-black text-slate-900">${w.TSS}</div>
-                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">TSS Points</div>
+
+                <div class="p-5 flex items-center justify-between">
+                    <div>
+                        <div class="flex gap-2 mb-1">
+                            ${w.labels.map(l => `<span class="text-[9px] font-black uppercase px-2 py-0.5 bg-amber-100 text-amber-700 rounded">${l}</span>`).join('')}
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-800 leading-tight">${w.name}</h2>
+                        <p class="text-slate-400 text-xs mt-1 italic font-medium">By ${w.author}</p>
+                    </div>
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-2xl font-black text-slate-900">${w.TSS}</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">TSS</span>
+                    </div>
                 </div>
             </div>
-        `).join('');
+            `;
+        }).join('');
     }
 
     function filterData() {
         const minTss = parseInt(document.getElementById('tssFilter').value);
         const selectedZone = document.getElementById('zoneFilter').value;
-
         document.getElementById('tssVal').innerText = minTss;
-
         const filtered = workouts.filter(w => {
             const matchesTss = w.TSS >= minTss;
             const matchesZone = selectedZone === "" || w.labels.includes(selectedZone);
             return matchesTss && matchesZone;
         });
-
         renderWorkouts(filtered);
     }
 
