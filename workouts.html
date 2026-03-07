@@ -3,54 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Library Pro</title>
+    <title>Workout Library</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
     <style>
-        input[type=range] { accent-color: #f59e0b; }
-        .workout-svg { max-height: 100px; width: 100%; object-fit: contain; transition: transform 0.3s ease; }
-        .workout-card:hover .workout-svg { transform: scale(1.05); }
+        /* Custom Amber styling for the slider */
+        .noUi-connect { background: #f59e0b; }
+        .noUi-handle { border-radius: 50%; cursor: pointer; }
+        .workout-svg { width: 100%; max-height: 120px; object-fit: contain; }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen p-4 md:p-10 text-slate-800">
 
 <div class="max-w-4xl mx-auto">
-    <header class="mb-8">
-        <h1 class="text-4xl font-black tracking-tight text-slate-900">Workout Library</h1>
-        <p class="text-slate-500 mt-1">Advanced filtering for your training sessions</p>
+    <header class="mb-8 flex justify-between items-end">
+        <div>
+            <h1 class="text-4xl font-black tracking-tight text-slate-900">Workouts</h1>
+            <p class="text-slate-500">Showing <span id="count" class="text-amber-600 font-bold">0</span> sessions</p>
+        </div>
+        <button id="resetBtn" class="text-xs font-bold uppercase text-slate-400 hover:text-rose-500 transition-colors mb-2">Reset Filters</button>
     </header>
 
-    <div class="sticky top-4 z-20 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 mb-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <div>
-                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 block">Filter by Zones / Labels</label>
-                <div id="labelContainer" class="flex flex-wrap gap-2">
-                    <span class="text-slate-300 animate-pulse text-sm">Loading labels...</span>
-                </div>
-            </div>
-
-            <div>
-                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 block text-right">TSS Range</label>
-                <div class="flex items-center gap-4">
-                    <div class="flex-1">
-                        <span class="text-[10px] text-slate-400 uppercase">Min: <span id="minTssVal" class="font-bold text-slate-700">0</span></span>
-                        <input type="range" id="minTss" min="0" max="250" value="0" class="w-full">
-                    </div>
-                    <div class="flex-1">
-                        <span class="text-[10px] text-slate-400 uppercase">Max: <span id="maxTssVal" class="font-bold text-slate-700">250</span></span>
-                        <input type="range" id="maxTss" min="0" max="250" value="250" class="w-full">
-                    </div>
-                </div>
+    <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 mb-8 space-y-8">
+        <div>
+            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 block text-center">Filter by Category</label>
+            <div id="labelContainer" class="flex flex-wrap justify-center gap-2">
             </div>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
-            <div class="text-sm font-medium text-slate-400">
-                Found <span id="count" class="text-amber-600 font-bold">0</span> workouts
-            </div>
-            <button id="resetBtn" class="text-xs font-bold uppercase text-rose-400 hover:text-rose-600 transition-colors">
-                Clear All Filters
-            </button>
+        <div class="px-4 pb-4">
+            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8 block text-center">TSS Range: <span id="tssRangeVal" class="text-slate-900 ml-2">0 - 250</span></label>
+            <div id="tssSlider" class="mx-auto max-w-md"></div>
         </div>
     </div>
 
@@ -61,8 +45,9 @@
 <script>
     let workouts = [];
     let selectedLabels = new Set();
+    let tssSlider;
 
-    // 1. Filename Logic (Matches your Dart code)
+    // 1. Filename Logic
     function getSvgPath(name) {
         let n = name.replace(/\//g, '-').replace(/\\/g, '-').replace(/ /g, '_').replace(/\?/g, '').replace(/\"/g, '').replace(/:/g, '');
         return `images/${n}.svg`;
@@ -74,21 +59,35 @@
             const data = await res.json();
             workouts = data.rawDB;
 
+            setupSlider();
             renderLabelCheckboxes(workouts);
             updateUI();
-        } catch (e) {
-            console.error(e);
-        }
+        } catch (e) { console.error("Data load error:", e); }
     }
 
-    // 2. Build Checkboxes dynamically
+    // 2. Setup Dual Slider
+    function setupSlider() {
+        const sliderElem = document.getElementById('tssSlider');
+        tssSlider = noUiSlider.create(sliderElem, {
+            start: [0, 250],
+            connect: true,
+            range: { 'min': 0, 'max': 250 },
+            step: 5,
+            format: { to: v => Math.round(v), from: v => v }
+        });
+
+        tssSlider.on('update', (values) => {
+            document.getElementById('tssRangeVal').innerText = `${values[0]} - ${values[1]}`;
+            updateUI();
+        });
+    }
+
     function renderLabelCheckboxes(data) {
         const container = document.getElementById('labelContainer');
         const labels = [...new Set(data.flatMap(w => w.labels))].sort();
-
         container.innerHTML = labels.map(l => `
             <button onclick="toggleLabel('${l}', this)"
-                    class="px-3 py-1 rounded-full border border-slate-200 text-xs font-bold transition-all hover:bg-slate-100 bg-white text-slate-600">
+                    class="px-4 py-1.5 rounded-full border border-slate-200 text-xs font-bold transition-all hover:border-amber-300 bg-white text-slate-500">
                 ${l}
             </button>
         `).join('');
@@ -97,67 +96,64 @@
     function toggleLabel(label, el) {
         if (selectedLabels.has(label)) {
             selectedLabels.delete(label);
-            el.classList.remove('bg-amber-500', 'text-white', 'border-amber-500');
-            el.classList.add('bg-white', 'text-slate-600');
+            el.classList.replace('bg-amber-500', 'bg-white');
+            el.classList.replace('text-white', 'text-slate-500');
+            el.classList.remove('border-amber-500');
         } else {
             selectedLabels.add(label);
-            el.classList.add('bg-amber-500', 'text-white', 'border-amber-500');
-            el.classList.remove('bg-white', 'text-slate-600');
+            el.classList.replace('bg-white', 'bg-amber-500');
+            el.classList.replace('text-slate-500', 'text-white');
+            el.classList.add('border-amber-500');
         }
         updateUI();
     }
 
-    // 3. Main Filter & Render Logic
+    // 3. Render Cards (SVG under description)
     function updateUI() {
-        const min = parseInt(document.getElementById('minTss').value);
-        const max = parseInt(document.getElementById('maxTss').value);
-
-        document.getElementById('minTssVal').innerText = min;
-        document.getElementById('maxTssVal').innerText = max;
+        if (!tssSlider) return;
+        const [min, max] = tssSlider.get();
 
         const filtered = workouts.filter(w => {
-            const inTssRange = w.TSS >= min && w.TSS <= max;
-            // If no labels selected, show all. If labels selected, check if workout has at least one.
-            const matchesLabels = selectedLabels.size === 0 || w.labels.some(l => selectedLabels.has(l));
-            return inTssRange && matchesLabels;
+            const inRange = w.TSS >= min && w.TSS <= max;
+            const hasLabel = selectedLabels.size === 0 || w.labels.some(l => selectedLabels.has(l));
+            return inRange && hasLabel;
         });
 
-        const container = document.getElementById('results');
         document.getElementById('count').innerText = filtered.length;
+        const container = document.getElementById('results');
 
         container.innerHTML = filtered.map(w => `
-            <div class="workout-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all flex flex-col">
-                <div class="bg-slate-50 p-6 flex justify-center items-center h-40 border-b border-slate-50">
-                    <img src="${getSvgPath(w.name)}" class="workout-svg" onerror="this.src='https://placehold.co/200x80?text=No+Preview'">
-                </div>
-                <div class="p-6">
-                    <div class="flex flex-wrap gap-1 mb-3">
-                        ${w.labels.map(l => `<span class="text-[9px] font-black bg-slate-100 text-slate-500 px-2 py-0.5 rounded tracking-tighter">${l}</span>`).join('')}
-                    </div>
-                    <h2 class="text-xl font-bold text-slate-800 leading-snug">${w.name}</h2>
-                    <div class="mt-4 flex justify-between items-end">
-                        <span class="text-xs text-slate-400 italic font-medium">By ${w.author}</span>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-xl font-bold text-slate-900 leading-tight">${w.name}</h2>
+                            <p class="text-slate-400 text-xs mt-1 italic">By ${w.author}</p>
+                        </div>
                         <div class="text-right">
-                            <div class="text-2xl font-black text-amber-600 leading-none">${w.TSS}</div>
-                            <div class="text-[10px] font-bold text-slate-300 uppercase">TSS</div>
+                            <span class="text-2xl font-black text-amber-600 block leading-none">${w.TSS}</span>
+                            <span class="text-[9px] font-bold text-slate-300 uppercase tracking-widest">TSS</span>
                         </div>
                     </div>
+
+                    <div class="flex flex-wrap gap-1 mb-6">
+                        ${w.labels.map(l => `<span class="text-[9px] font-black bg-slate-50 text-slate-400 px-2 py-0.5 rounded">${l}</span>`).join('')}
+                    </div>
+                </div>
+
+                <div class="mt-auto pt-4 border-t border-slate-50">
+                    <img src="${getSvgPath(w.name)}" class="workout-svg" onerror="this.src='https://placehold.co/300x100?text=No+Preview'">
                 </div>
             </div>
         `).join('');
     }
 
-    // 4. Listeners & Reset
-    document.getElementById('minTss').addEventListener('input', updateUI);
-    document.getElementById('maxTss').addEventListener('input', updateUI);
     document.getElementById('resetBtn').addEventListener('click', () => {
         selectedLabels.clear();
-        document.getElementById('minTss').value = 0;
-        document.getElementById('maxTss').value = 250;
-        // Visual reset of buttons
+        tssSlider.set([0, 250]);
         document.querySelectorAll('#labelContainer button').forEach(b => {
             b.classList.remove('bg-amber-500', 'text-white', 'border-amber-500');
-            b.classList.add('bg-white', 'text-slate-600');
+            b.classList.add('bg-white', 'text-slate-500');
         });
         updateUI();
     });
