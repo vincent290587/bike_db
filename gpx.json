@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Morning Forest Run",
+    "file": "gpx/road/COURSE_275244906.gpx",
+    "distance": 101,
+    "type": "Road",
+    "elevation": 150
+  },
+  {
+    "name": "Morning Forest Run",
+    "file": "gpx/road/COURSE_275244906.gpx",
+    "distance": 101,
+    "type": "MTB",
+    "elevation": 150
+  },
+  {
+    "name": "Morning Forest Run",
+    "file": "gpx/road/COURSE_275244906.gpx",
+    "distance": 101,
+    "type": "Gravel",
+    "elevation": 150
+  },
+  {
+    "name": "Morning Forest Run",
+    "file": "gpx/road/COURSE_275244906.gpx",
+    "distance": 101,
+    "type": "Road",
+    "elevation": 150
+  }
+]
