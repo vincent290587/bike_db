@@ -1,5 +1,13 @@
 [
     {
+        "name": "Kopie van Gravel Ride Veluwe - terpstra",
+        "file": "gpx/gravel/Veluwe/COURSE_275244083.gpx",
+        "distance": 185.03,
+        "elevation": 1530,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
         "name": "180 GF Training 2",
         "file": "gpx/road/Rotterdam/COURSE_339994442.gpx",
         "distance": 179.94,
@@ -28,6 +36,14 @@
         "file": "gpx/road/Rotterdam/COURSE_125280269.gpx",
         "distance": 144.92,
         "elevation": 265,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "130 GF Training 3",
+        "file": "gpx/road/Rotterdam/COURSE_366983023.gpx",
+        "distance": 131.38,
+        "elevation": 138,
         "type": "Road",
         "location": "Rotterdam"
     },
@@ -81,11 +97,11 @@
     },
     {
         "name": "Kopie van Veluwe grvl 100km - JvL",
-        "file": "gpx/road/COURSE_275244906.gpx",
+        "file": "gpx/gravel/Veluwe/COURSE_275244906.gpx",
         "distance": 101.77,
         "elevation": 568,
-        "type": "Road",
-        "location": "General"
+        "type": "Gravel",
+        "location": "Veluwe"
     },
     {
         "name": "Maron-105k",
@@ -104,6 +120,14 @@
         "location": "Rotterdam"
     },
     {
+        "name": "Kopie van Kroondomein grvl SdB",
+        "file": "gpx/gravel/Veluwe/COURSE_275244652.gpx",
+        "distance": 91.12,
+        "elevation": 600,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
         "name": "Radio Kootwijk – Uitzicht op Radio Kootwijk Circuit à partir de Eerbeek",
         "file": "gpx/gravel/Veluwe/COURSE_356317826.gpx",
         "distance": 88.28,
@@ -120,10 +144,26 @@
         "location": "Rotterdam"
     },
     {
+        "name": "Bospadenpret op de Veluwe",
+        "file": "gpx/gravel/Veluwe/COURSE_141998499.gpx",
+        "distance": 84.0,
+        "elevation": 351,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
         "name": "Radio Kootwijk – Radio Kootwijk loop from Arnhem Centraal",
         "file": "gpx/gravel/Veluwe/COURSE_356317829.gpx",
         "distance": 82.34,
         "elevation": 309,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
+        "name": "Apeldoorn grv sean 80",
+        "file": "gpx/gravel/Veluwe/COURSE_234431007.gpx",
+        "distance": 81.04,
+        "elevation": 415,
         "type": "Gravel",
         "location": "Veluwe"
     },
@@ -224,12 +264,28 @@
         "location": "Rotterdam"
     },
     {
+        "name": "Arnhem Fietsen 51,13 km - mrt 01",
+        "file": "gpx/gravel/Veluwe/COURSE_335125713.gpx",
+        "distance": 51.17,
+        "elevation": 449,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
         "name": "50 - Leersum",
         "file": "gpx/gravel/Veluwe/COURSE_427743886.gpx",
         "distance": 50.3,
         "elevation": 470,
         "type": "Gravel",
         "location": "Veluwe"
+    },
+    {
+        "name": "04/24/2010 Laxou, Lorraine, France",
+        "file": "gpx/gravel/Nancy/50k_Nancy.gpx",
+        "distance": 49.33,
+        "elevation": 1101,
+        "type": "Gravel",
+        "location": "Nancy"
     },
     {
         "name": "48_route_rotte",
@@ -256,18 +312,26 @@
         "location": "Veluwe"
     },
     {
-        "name": "Single track Italiaanse weg – Muur van Mariëndaal Circuit à partir de Ede Centrum",
-        "file": "gpx/gravel/Veluwe/COURSE_356317827.gpx",
-        "distance": 40.94,
-        "elevation": 193,
-        "type": "Gravel",
-        "location": "Veluwe"
-    },
-    {
         "name": "39 - Monts et Jardins 2018",
         "file": "gpx/gravel/Nancy/COURSE_324466036.gpx",
         "distance": 39.61,
         "elevation": 577,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "MJx39",
+        "file": "gpx/gravel/Nancy/MJx39.gpx",
+        "distance": 38.74,
+        "elevation": 894,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "Monts & Jardins 2018",
+        "file": "gpx/gravel/Nancy/MJ18_37.gpx",
+        "distance": 36.6,
+        "elevation": 591,
         "type": "Gravel",
         "location": "Nancy"
     },
