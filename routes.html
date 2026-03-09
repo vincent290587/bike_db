@@ -172,12 +172,22 @@
 
     function loadGPX(url) {
         if (currentGpxLayer) map.removeLayer(currentGpxLayer);
+
         currentGpxLayer = new L.GPX(url, {
             async: true,
-            marker_options: { startIconUrl: '', endIconUrl: '', shadowUrl: '' },
-            polyline_options: { color: '#e74c3c', weight: 5 }
-        }).on('loaded', e => map.fitBounds(e.target.getBounds(), {padding: [40, 40]}))
-            .addTo(map);
+            marker_options: {
+                // Define the start icon
+                startIconUrl: 'https://cdn.jsdelivr.net/gh/mpetazzoni/leaflet-gpx@master/icons/pin-icon-start.png',
+                // Optional: Hide the end icon or use a different one
+                endIconUrl: '',
+                shadowUrl: '',
+                iconSize: [25, 35],
+                iconAnchor: [12, 35]
+            },
+            polyline_options: { color: '#e74c3c', weight: 5, opacity: 0.8 }
+        }).on('loaded', e => {
+            map.fitBounds(e.target.getBounds(), {padding: [35, 35]});
+        }).addTo(map);
     }
 
     // Bind events
