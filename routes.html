@@ -67,7 +67,7 @@
     let allTracks = [];
     let currentGpxLayer = null;
 
-    fetch('gpx.json')
+    fetch('gpx/data.json')
         .then(res => res.json())
         .then(data => {
             allTracks = data;
@@ -91,8 +91,9 @@
             const card = document.createElement('div');
             card.className = 'track-card';
             card.innerHTML = `
-                <strong>${track.name}</strong><br>
-                ${track.distance} km | ${track.elevation}m<br>
+                <div style="font-size: 0.7rem; color: #666; text-transform: uppercase;">${track.location}</div>
+                <strong style="display: block; margin-bottom: 5px;">${track.name}</strong>
+                <span>${track.distance}km | ${track.elevation}m+</span><br>
                 <span class="badge ${track.type}">${track.type}</span>
             `;
             card.onclick = () => {
