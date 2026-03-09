@@ -1416,7 +1416,7 @@
 
 - 300s ramp 72-33%
 
-![images/Build_me_up_-_#8.svg](images/Build_me_up_-_#8.svg)
+![images/Build_me_up_-_X8.svg](images/Build_me_up_-_X8.svg)
 ## Zwift Academy Tri WKO 5 V02 Max development 52 min - TrainerDay.com - Zone 5 (V02) - 67 TSS
 
 - 360s ramp 50-80%
@@ -5178,7 +5178,7 @@
 
 - 300s 55%
 
-![images/TT#1_The_Polish.svg](images/TT#1_The_Polish.svg)
+![images/TTX1_The_Polish.svg](images/TTX1_The_Polish.svg)
 ## GC Coaching's HWBTWTDWH - Zone 3 (Tempo/SST) - 94 TSS
 
 - 600s ramp 40-80%
@@ -5286,7 +5286,7 @@
 - 300s 55%
 - 300s ramp 82-45%
 
-![images/TT#1_The_Polish.svg](images/TT#1_The_Polish.svg)
+![images/TTX1_The_Polish.svg](images/TTX1_The_Polish.svg)
 ## Build me up - Orange unicorn - Zone 3 (Tempo/SST) - 103 TSS
 
 - 600s ramp 25-75%
