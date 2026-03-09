@@ -40,18 +40,30 @@
 <body>
 
 <div id="sidebar">
-    <h3>GPX Explorer</h3>
+    <h2 style="margin-top:0">GPX Explorer</h2>
+
     <div class="controls">
-        <label>Min Distance: <input type="number" id="minDist" value="0" style="width: 60px;"> km</label>
-        <label>Surface:
+        <div class="filter-group">
+            <label>Surface</label>
             <select id="typeFilter">
                 <option value="All">All Types</option>
                 <option value="Road">Road</option>
                 <option value="Gravel">Gravel</option>
                 <option value="MTB">MTB</option>
             </select>
-        </label>
+        </div>
+        <div class="filter-group">
+            <label>Location</label>
+            <select id="locFilter">
+                <option value="All">All Regions</option>
+            </select>
+        </div>
+        <div class="filter-group" style="grid-column: span 2;">
+            <label>Min Distance: <span id="distVal">0</span> km</label>
+            <input type="range" id="minDist" min="0" max="200" value="0">
+        </div>
     </div>
+
     <div id="list"></div>
 </div>
 
@@ -61,8 +73,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
 
 <script>
-    const map = L.map('map').setView([0, 0], 2);
-    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+    const map = L.map('map').setView([51.505, -0.09], 4);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
     let allTracks = [];
     let currentGpxLayer = null;
@@ -71,33 +83,47 @@
         .then(res => res.json())
         .then(data => {
             allTracks = data;
+            populateLocationFilter(data);
             renderList();
         });
 
+    function populateLocationFilter(data) {
+        const locSelect = document.getElementById('locFilter');
+        const uniqueLocations = [...new Set(data.map(t => t.location))].sort();
+
+        uniqueLocations.forEach(loc => {
+            const opt = document.createElement('option');
+            opt.value = loc;
+            opt.textContent = loc;
+            locSelect.appendChild(opt);
+        });
+    }
+
     function renderList() {
         const listDiv = document.getElementById('list');
-        const min = parseFloat(document.getElementById('minDist').value) || 0;
-        const type = document.getElementById('typeFilter').value;
+        const minD = parseFloat(document.getElementById('minDist').value);
+        const typeF = document.getElementById('typeFilter').value;
+        const locF = document.getElementById('locFilter').value;
 
+        document.getElementById('distVal').textContent = minD;
         listDiv.innerHTML = '';
 
         const filtered = allTracks.filter(t => {
-            const matchDist = t.distance >= min;
-            const matchType = (type === 'All' || t.type === type);
-            return matchDist && matchType;
+            return (t.distance >= minD) &&
+                (typeF === 'All' || t.type === typeF) &&
+                (locF === 'All' || t.location === locF);
         });
 
         filtered.forEach(track => {
             const card = document.createElement('div');
             card.className = 'track-card';
             card.innerHTML = `
-                <div style="font-size: 0.7rem; color: #666; text-transform: uppercase;">${track.location}</div>
-                <strong style="display: block; margin-bottom: 5px;">${track.name}</strong>
-                <span>${track.distance}km | ${track.elevation}m+</span><br>
+                <div style="color: #888; font-size: 0.7rem;">${track.location}</div>
+                <strong>${track.name}</strong><br>
+                ${track.distance} km | ${track.elevation}m+<br>
                 <span class="badge ${track.type}">${track.type}</span>
             `;
             card.onclick = () => {
-                // Remove previous "active" highlights
                 document.querySelectorAll('.track-card').forEach(c => c.classList.remove('active'));
                 card.classList.add('active');
                 loadGPX(track.file);
@@ -108,19 +134,18 @@
 
     function loadGPX(url) {
         if (currentGpxLayer) map.removeLayer(currentGpxLayer);
-
         currentGpxLayer = new L.GPX(url, {
             async: true,
             marker_options: { startIconUrl: '', endIconUrl: '', shadowUrl: '' },
-            polyline_options: { color: '#ff4400', opacity: 0.8, weight: 4 }
-        }).on('loaded', (e) => {
-            map.fitBounds(e.target.getBounds(), { padding: [50, 50] });
-        }).addTo(map);
+            polyline_options: { color: '#e74c3c', weight: 5 }
+        }).on('loaded', e => map.fitBounds(e.target.getBounds(), {padding: [40, 40]}))
+            .addTo(map);
     }
 
-    // Event Listeners
+    // Bind events
     document.getElementById('minDist').oninput = renderList;
     document.getElementById('typeFilter').onchange = renderList;
+    document.getElementById('locFilter').onchange = renderList;
 </script>
 </body>
 </html>
