@@ -34,6 +34,31 @@
         .Gravel { background: #e67e22; }
         .MTB { background: #27ae60; }
 
+        .garmin-btn, .download-btn {
+            text-decoration: none;
+            margin-top: 5px;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            /*font-weight: bold;*/
+            color: #555;
+            border: 1px solid #ccc;
+            background: #fff;
+            transition: all 0.2s;
+        }
+
+        .garmin-btn:hover {
+            background: #007cc3; /* Garmin Blue */
+            color: white;
+            border-color: #007cc3;
+        }
+
+        .download-btn:hover {
+            background: #333;
+            color: white;
+            border-color: #333;
+        }
+
         #map { flex-grow: 1; }
     </style>
 </head>
@@ -120,9 +145,22 @@
             card.innerHTML = `
                 <div style="color: #888; font-size: 0.7rem;">${track.location}</div>
                 <strong>${track.name}</strong><br>
-                ${track.distance} km | ${track.elevation}m+<br>
-                <span class="badge ${track.type}">${track.type}</span>
+                <span style="font-size: 0.8rem;">${track.distance} km | ${track.elevation}m+</span><br>
+                <div style="margin-top: 8px; display: flex; gap: 5px;">
+                    <span class="badge ${track.type}">${track.type}</span>
+<!--                    <a href="https://connect.garmin.com/modern/import-data" target="_blank" class="garmin-btn" title="Open Garmin Import">-->
+<!--                        Garmin-->
+<!--                    </a>-->
+                    <a href="${track.file}" download class="download-btn" title="Download GPX">
+                        GPX
+                    </a>
+                </div>
             `;
+
+            // Clicking the card still loads the map, but clicking the buttons won't trigger the map load
+            // card.querySelector('.garmin-btn').onclick = (e) => e.stopPropagation();
+            card.querySelector('.download-btn').onclick = (e) => e.stopPropagation();
+
             card.onclick = () => {
                 document.querySelectorAll('.track-card').forEach(c => c.classList.remove('active'));
                 card.classList.add('active');
