@@ -97,7 +97,7 @@
     let selectedLabels = new Set();
 
     function getSvgPath(name) {
-        let n = name.replace(/\//g, '-').replace(/\\/g, '-').replace(/ /g, '_').replace(/\?/g, '').replace(/#/g, '').replace(/\"/g, '').replace(/:/g, '');
+        let n = name.replace(/\//g, '-').replace(/\\/g, '-').replace(/ /g, '_').replace(/\?/g, '').replace(/\#/g, 'X').replace(/\"/g, '').replace(/:/g, '');
         return `images/${n}.svg`;
     }
 
@@ -167,7 +167,6 @@
                             ${w.labels.map(l => `<span class="text-[9px] font-black bg-amber-50 text-amber-600 px-2 py-1 rounded-lg uppercase tracking-tighter">${l}</span>`).join('')}
                         </div>
                         <h2 class="text-2xl font-bold text-slate-800 leading-tight group-hover:text-amber-600 transition-colors">${w.name}</h2>
-                        <p class="text-slate-400 text-xs mt-2 font-medium">By ${w.author}</p>
                     </div>
                     <div class="ml-4 bg-slate-50 rounded-2xl p-4 text-center min-w-[70px]">
                         <span class="text-2xl font-black text-slate-800 block">${w.TSS}</span>
