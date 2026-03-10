@@ -18,7 +18,7 @@ def get_gpx_data(file_path):
 
             # 2. Calculate Distance (km)
             dist_m = gpx.length_2d()
-            distance = round(dist_m / 1000, 2)
+            distance = round((dist_m + 500) / 1000, 0)
 
             # 3. Calculate Elevation Gain (m)
             uphill, downhill = gpx.get_uphill_downhill()
@@ -59,8 +59,8 @@ def build_index(root_dir):
                         "location": location
                     })
 
-    # Sort by distance descending as a nice default
-    tracks_data.sort(key=lambda x: x['distance'], reverse=True)
+    # Sort by distance ascending as a nice default
+    tracks_data.sort(key=lambda x: x['distance'], reverse=False)
 
     with open('gpx/data.json', 'w', encoding='utf-8') as f:
         json.dump(tracks_data, f, indent=4, ensure_ascii=False)

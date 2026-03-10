@@ -1,147 +1,211 @@
 [
     {
-        "name": "Kopie van Gravel Ride Veluwe - terpstra",
-        "file": "gpx/gravel/Veluwe/COURSE_275244083.gpx",
-        "distance": 185.03,
-        "elevation": 1530,
+        "name": "Gravel-Laxou-26",
+        "file": "gpx/gravel/Nancy/COURSE_242197860.gpx",
+        "distance": 26.0,
+        "elevation": 244,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "26 - Laxou",
+        "file": "gpx/gravel/Nancy/COURSE_324118741.gpx",
+        "distance": 27.0,
+        "elevation": 317,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "35 - Laxou",
+        "file": "gpx/gravel/Nancy/COURSE_323994104.gpx",
+        "distance": 35.0,
+        "elevation": 428,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "Monts & Jardins 2018",
+        "file": "gpx/gravel/Nancy/MJ18_37.gpx",
+        "distance": 37.0,
+        "elevation": 591,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "MJx39",
+        "file": "gpx/gravel/Nancy/MJx39.gpx",
+        "distance": 39.0,
+        "elevation": 894,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "39 - Monts et Jardins 2018",
+        "file": "gpx/gravel/Nancy/COURSE_324466036.gpx",
+        "distance": 40.0,
+        "elevation": 577,
+        "type": "Gravel",
+        "location": "Nancy"
+    },
+    {
+        "name": "41 - Ede singletrack",
+        "file": "gpx/gravel/Veluwe/COURSE_119934984.gpx",
+        "distance": 42.0,
+        "elevation": 208,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "180 GF Training 2",
-        "file": "gpx/road/Rotterdam/COURSE_339994442.gpx",
-        "distance": 179.94,
-        "elevation": 160,
+        "name": "45-Rivers",
+        "file": "gpx/road/Rotterdam/COURSE_263301346.gpx",
+        "distance": 47.0,
+        "elevation": 103,
         "type": "Road",
         "location": "Rotterdam"
     },
     {
-        "name": "167 - NoordwijkJ",
-        "file": "gpx/road/Rotterdam/COURSE_259331502.gpx",
-        "distance": 167.44,
-        "elevation": 395,
+        "name": "48_route_rotte",
+        "file": "gpx/road/Rotterdam/COURSE_382856307.gpx",
+        "distance": 49.0,
+        "elevation": 96,
         "type": "Road",
         "location": "Rotterdam"
     },
     {
-        "name": "GF Training 16032025 160k",
-        "file": "gpx/road/Rotterdam/COURSE_337853383.gpx",
-        "distance": 160.54,
-        "elevation": 297,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "145 - Noordwijk",
-        "file": "gpx/road/Rotterdam/COURSE_125280269.gpx",
-        "distance": 144.92,
-        "elevation": 265,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "130 GF Training 3",
-        "file": "gpx/road/Rotterdam/COURSE_366983023.gpx",
-        "distance": 131.38,
-        "elevation": 138,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "130 - South rotte",
-        "file": "gpx/road/Rotterdam/COURSE_352954182.gpx",
-        "distance": 127.11,
-        "elevation": 169,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "125 – La Planche des Belles Filles",
-        "file": "gpx/road/Nancy/COURSE_262531890.gpx",
-        "distance": 125.76,
-        "elevation": 2554,
-        "type": "Road",
+        "name": "04/24/2010 Laxou, Lorraine, France",
+        "file": "gpx/gravel/Nancy/50k_Nancy.gpx",
+        "distance": 50.0,
+        "elevation": 1101,
+        "type": "Gravel",
         "location": "Nancy"
     },
     {
-        "name": "125k Nancy-Sud",
-        "file": "gpx/road/Nancy/COURSE_117641443.gpx",
-        "distance": 124.04,
-        "elevation": 1131,
-        "type": "Road",
-        "location": "Nancy"
-    },
-    {
-        "name": "110 - Noordwijk",
-        "file": "gpx/road/Rotterdam/COURSE_68278206.gpx",
-        "distance": 110.47,
-        "elevation": 169,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "CS010 - rondje duinen ",
-        "file": "gpx/road/Rotterdam/COURSE_247266567.gpx",
-        "distance": 107.48,
-        "elevation": 298,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "103 – La Planche des Belles Filles",
-        "file": "gpx/road/Nancy/COURSE_262530001.gpx",
-        "distance": 105.02,
-        "elevation": 2246,
-        "type": "Road",
-        "location": "Nancy"
-    },
-    {
-        "name": "Kopie van Veluwe grvl 100km - JvL",
-        "file": "gpx/gravel/Veluwe/COURSE_275244906.gpx",
-        "distance": 101.77,
-        "elevation": 568,
+        "name": "50 - Leersum",
+        "file": "gpx/gravel/Veluwe/COURSE_427743886.gpx",
+        "distance": 51.0,
+        "elevation": 470,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "Maron-105k",
-        "file": "gpx/road/Nancy/COURSE_117645086.gpx",
-        "distance": 100.43,
-        "elevation": 759,
+        "name": "Arnhem Fietsen 51,13 km - mrt 01",
+        "file": "gpx/gravel/Veluwe/COURSE_335125713.gpx",
+        "distance": 52.0,
+        "elevation": 449,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
+        "name": "51 - Maas",
+        "file": "gpx/road/Rotterdam/COURSE_344471611.gpx",
+        "distance": 52.0,
+        "elevation": 101,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "50_Zoetermeer",
+        "file": "gpx/road/Rotterdam/COURSE_36531044.gpx",
+        "distance": 53.0,
+        "elevation": 139,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "CS010 50k Noord",
+        "file": "gpx/road/Rotterdam/COURSE_163362113.gpx",
+        "distance": 55.0,
+        "elevation": 84,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "MTB Ede - Kronkelend Veluwedal – MTB Ede - Double track path Circuit à partir de Lunteren",
+        "file": "gpx/gravel/Veluwe/COURSE_356317825.gpx",
+        "distance": 58.0,
+        "elevation": 217,
+        "type": "Gravel",
+        "location": "Veluwe"
+    },
+    {
+        "name": "60-Rivers",
+        "file": "gpx/road/Rotterdam/COURSE_264985555.gpx",
+        "distance": 58.0,
+        "elevation": 103,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "62 - Rhoon",
+        "file": "gpx/road/Rotterdam/COURSE_335802012.gpx",
+        "distance": 63.0,
+        "elevation": 139,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "63-Vezense",
+        "file": "gpx/road/Nancy/COURSE_118814415.gpx",
+        "distance": 64.0,
+        "elevation": 771,
         "type": "Road",
         "location": "Nancy"
     },
     {
-        "name": "100 - Lacs",
-        "file": "gpx/road/Rotterdam/COURSE_296012606.gpx",
-        "distance": 100.12,
-        "elevation": 169,
+        "name": "65-Moselle",
+        "file": "gpx/road/Nancy/COURSE_118816314.gpx",
+        "distance": 66.0,
+        "elevation": 582,
         "type": "Road",
-        "location": "Rotterdam"
+        "location": "Nancy"
     },
     {
-        "name": "Kopie van Kroondomein grvl SdB",
-        "file": "gpx/gravel/Veluwe/COURSE_275244652.gpx",
-        "distance": 91.12,
-        "elevation": 600,
+        "name": "Gravelpad Veluwezoom – Gravelsnelweg Veluwezoom Circuit à partir de Arnhem Velperpoort",
+        "file": "gpx/gravel/Veluwe/COURSE_356317822.gpx",
+        "distance": 70.0,
+        "elevation": 535,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "Radio Kootwijk – Uitzicht op Radio Kootwijk Circuit à partir de Eerbeek",
-        "file": "gpx/gravel/Veluwe/COURSE_356317826.gpx",
-        "distance": 88.28,
-        "elevation": 342,
+        "name": "70 km - laxou",
+        "file": "gpx/road/Nancy/COURSE_317820797.gpx",
+        "distance": 71.0,
+        "elevation": 922,
+        "type": "Road",
+        "location": "Nancy"
+    },
+    {
+        "name": "75 - Rotterdam lake",
+        "file": "gpx/road/Rotterdam/COURSE_331491373.gpx",
+        "distance": 75.0,
+        "elevation": 104,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "CS010 75km Zuid",
+        "file": "gpx/road/Rotterdam/COURSE_164974795.gpx",
+        "distance": 78.0,
+        "elevation": 134,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "Apeldoorn grv sean 80",
+        "file": "gpx/gravel/Veluwe/COURSE_234431007.gpx",
+        "distance": 82.0,
+        "elevation": 415,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "86-FromWork",
-        "file": "gpx/road/Rotterdam/COURSE_272286999.gpx",
-        "distance": 86.64,
-        "elevation": 184,
-        "type": "Road",
-        "location": "Rotterdam"
+        "name": "Radio Kootwijk – Radio Kootwijk loop from Arnhem Centraal",
+        "file": "gpx/gravel/Veluwe/COURSE_356317829.gpx",
+        "distance": 83.0,
+        "elevation": 309,
+        "type": "Gravel",
+        "location": "Veluwe"
     },
     {
         "name": "Bospadenpret op de Veluwe",
@@ -152,211 +216,147 @@
         "location": "Veluwe"
     },
     {
-        "name": "Radio Kootwijk – Radio Kootwijk loop from Arnhem Centraal",
-        "file": "gpx/gravel/Veluwe/COURSE_356317829.gpx",
-        "distance": 82.34,
-        "elevation": 309,
+        "name": "86-FromWork",
+        "file": "gpx/road/Rotterdam/COURSE_272286999.gpx",
+        "distance": 87.0,
+        "elevation": 184,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "Radio Kootwijk – Uitzicht op Radio Kootwijk Circuit à partir de Eerbeek",
+        "file": "gpx/gravel/Veluwe/COURSE_356317826.gpx",
+        "distance": 89.0,
+        "elevation": 342,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "Apeldoorn grv sean 80",
-        "file": "gpx/gravel/Veluwe/COURSE_234431007.gpx",
-        "distance": 81.04,
-        "elevation": 415,
+        "name": "Kopie van Kroondomein grvl SdB",
+        "file": "gpx/gravel/Veluwe/COURSE_275244652.gpx",
+        "distance": 92.0,
+        "elevation": 600,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "CS010 75km Zuid",
-        "file": "gpx/road/Rotterdam/COURSE_164974795.gpx",
-        "distance": 77.36,
-        "elevation": 134,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "75 - Rotterdam lake",
-        "file": "gpx/road/Rotterdam/COURSE_331491373.gpx",
-        "distance": 74.59,
-        "elevation": 104,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "70 km - laxou",
-        "file": "gpx/road/Nancy/COURSE_317820797.gpx",
-        "distance": 70.32,
-        "elevation": 922,
+        "name": "Maron-105k",
+        "file": "gpx/road/Nancy/COURSE_117645086.gpx",
+        "distance": 101.0,
+        "elevation": 759,
         "type": "Road",
         "location": "Nancy"
     },
     {
-        "name": "Gravelpad Veluwezoom – Gravelsnelweg Veluwezoom Circuit à partir de Arnhem Velperpoort",
-        "file": "gpx/gravel/Veluwe/COURSE_356317822.gpx",
-        "distance": 69.47,
-        "elevation": 535,
+        "name": "100 - Lacs",
+        "file": "gpx/road/Rotterdam/COURSE_296012606.gpx",
+        "distance": 101.0,
+        "elevation": 169,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "Kopie van Veluwe grvl 100km - JvL",
+        "file": "gpx/gravel/Veluwe/COURSE_275244906.gpx",
+        "distance": 102.0,
+        "elevation": 568,
         "type": "Gravel",
         "location": "Veluwe"
     },
     {
-        "name": "65-Moselle",
-        "file": "gpx/road/Nancy/COURSE_118816314.gpx",
-        "distance": 65.21,
-        "elevation": 582,
+        "name": "103 – La Planche des Belles Filles",
+        "file": "gpx/road/Nancy/COURSE_262530001.gpx",
+        "distance": 106.0,
+        "elevation": 2246,
         "type": "Road",
         "location": "Nancy"
     },
     {
-        "name": "63-Vezense",
-        "file": "gpx/road/Nancy/COURSE_118814415.gpx",
-        "distance": 63.83,
-        "elevation": 771,
-        "type": "Road",
-        "location": "Nancy"
-    },
-    {
-        "name": "62 - Rhoon",
-        "file": "gpx/road/Rotterdam/COURSE_335802012.gpx",
-        "distance": 62.51,
-        "elevation": 139,
+        "name": "CS010 - rondje duinen ",
+        "file": "gpx/road/Rotterdam/COURSE_247266567.gpx",
+        "distance": 108.0,
+        "elevation": 298,
         "type": "Road",
         "location": "Rotterdam"
     },
     {
-        "name": "MTB Ede - Kronkelend Veluwedal – MTB Ede - Double track path Circuit à partir de Lunteren",
-        "file": "gpx/gravel/Veluwe/COURSE_356317825.gpx",
-        "distance": 57.57,
-        "elevation": 217,
+        "name": "110 - Noordwijk",
+        "file": "gpx/road/Rotterdam/COURSE_68278206.gpx",
+        "distance": 111.0,
+        "elevation": 169,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "125k Nancy-Sud",
+        "file": "gpx/road/Nancy/COURSE_117641443.gpx",
+        "distance": 125.0,
+        "elevation": 1131,
+        "type": "Road",
+        "location": "Nancy"
+    },
+    {
+        "name": "125 – La Planche des Belles Filles",
+        "file": "gpx/road/Nancy/COURSE_262531890.gpx",
+        "distance": 126.0,
+        "elevation": 2554,
+        "type": "Road",
+        "location": "Nancy"
+    },
+    {
+        "name": "130 - South rotte",
+        "file": "gpx/road/Rotterdam/COURSE_352954182.gpx",
+        "distance": 128.0,
+        "elevation": 169,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "130 GF Training 3",
+        "file": "gpx/road/Rotterdam/COURSE_366983023.gpx",
+        "distance": 132.0,
+        "elevation": 138,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "145 - Noordwijk",
+        "file": "gpx/road/Rotterdam/COURSE_125280269.gpx",
+        "distance": 145.0,
+        "elevation": 265,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "GF Training 16032025 160k",
+        "file": "gpx/road/Rotterdam/COURSE_337853383.gpx",
+        "distance": 161.0,
+        "elevation": 297,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "167 - NoordwijkJ",
+        "file": "gpx/road/Rotterdam/COURSE_259331502.gpx",
+        "distance": 168.0,
+        "elevation": 395,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "180 GF Training 2",
+        "file": "gpx/road/Rotterdam/COURSE_339994442.gpx",
+        "distance": 180.0,
+        "elevation": 160,
+        "type": "Road",
+        "location": "Rotterdam"
+    },
+    {
+        "name": "Kopie van Gravel Ride Veluwe - terpstra",
+        "file": "gpx/gravel/Veluwe/COURSE_275244083.gpx",
+        "distance": 186.0,
+        "elevation": 1530,
         "type": "Gravel",
         "location": "Veluwe"
-    },
-    {
-        "name": "60-Rivers",
-        "file": "gpx/road/Rotterdam/COURSE_264985555.gpx",
-        "distance": 57.21,
-        "elevation": 103,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "CS010 50k Noord",
-        "file": "gpx/road/Rotterdam/COURSE_163362113.gpx",
-        "distance": 54.17,
-        "elevation": 84,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "50_Zoetermeer",
-        "file": "gpx/road/Rotterdam/COURSE_36531044.gpx",
-        "distance": 52.34,
-        "elevation": 139,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "51 - Maas",
-        "file": "gpx/road/Rotterdam/COURSE_344471611.gpx",
-        "distance": 51.22,
-        "elevation": 101,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "Arnhem Fietsen 51,13 km - mrt 01",
-        "file": "gpx/gravel/Veluwe/COURSE_335125713.gpx",
-        "distance": 51.17,
-        "elevation": 449,
-        "type": "Gravel",
-        "location": "Veluwe"
-    },
-    {
-        "name": "50 - Leersum",
-        "file": "gpx/gravel/Veluwe/COURSE_427743886.gpx",
-        "distance": 50.3,
-        "elevation": 470,
-        "type": "Gravel",
-        "location": "Veluwe"
-    },
-    {
-        "name": "04/24/2010 Laxou, Lorraine, France",
-        "file": "gpx/gravel/Nancy/50k_Nancy.gpx",
-        "distance": 49.33,
-        "elevation": 1101,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "48_route_rotte",
-        "file": "gpx/road/Rotterdam/COURSE_382856307.gpx",
-        "distance": 48.73,
-        "elevation": 96,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "45-Rivers",
-        "file": "gpx/road/Rotterdam/COURSE_263301346.gpx",
-        "distance": 46.83,
-        "elevation": 103,
-        "type": "Road",
-        "location": "Rotterdam"
-    },
-    {
-        "name": "41 - Ede singletrack",
-        "file": "gpx/gravel/Veluwe/COURSE_119934984.gpx",
-        "distance": 41.41,
-        "elevation": 208,
-        "type": "Gravel",
-        "location": "Veluwe"
-    },
-    {
-        "name": "39 - Monts et Jardins 2018",
-        "file": "gpx/gravel/Nancy/COURSE_324466036.gpx",
-        "distance": 39.61,
-        "elevation": 577,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "MJx39",
-        "file": "gpx/gravel/Nancy/MJx39.gpx",
-        "distance": 38.74,
-        "elevation": 894,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "Monts & Jardins 2018",
-        "file": "gpx/gravel/Nancy/MJ18_37.gpx",
-        "distance": 36.6,
-        "elevation": 591,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "35 - Laxou",
-        "file": "gpx/gravel/Nancy/COURSE_323994104.gpx",
-        "distance": 34.82,
-        "elevation": 428,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "26 - Laxou",
-        "file": "gpx/gravel/Nancy/COURSE_324118741.gpx",
-        "distance": 26.08,
-        "elevation": 317,
-        "type": "Gravel",
-        "location": "Nancy"
-    },
-    {
-        "name": "Gravel-Laxou-26",
-        "file": "gpx/gravel/Nancy/COURSE_242197860.gpx",
-        "distance": 25.92,
-        "elevation": 244,
-        "type": "Gravel",
-        "location": "Nancy"
     }
 ]
